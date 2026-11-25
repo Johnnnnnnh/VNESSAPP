@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="#F5F6FA">
+
+    <!-- Encabezado con información del rol y botón de nuevo trámite -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_marginBottom="12dp">
+
+        <TextView
+            android:id="@+id/tvRolInfo"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="Rol: Usuario"
+            android:textStyle="bold"
+            android:textColor="#34495E"/>
+
+        <Button
+            android:id="@+id/btnNuevoTrámite"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="+ Nuevo Trámite"/>
+    </LinearLayout>
+
+    <!-- Botón Conectar con Vness Físico (Arduino + LED) -->
+    <Button
+        android:id="@+id/btnConectarVnessBot"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="🤖 Conectar con Vness (Arduino / LED)"
+        android:backgroundTint="#8E44AD"
+        android:textColor="#FFFFFF"
+        android:layout_marginBottom="12dp"/>
+
+    <!-- Botón de Gestión de Usuarios (EXCLUSIVO PARA ADMIN) -->
+    <Button
+        android:id="@+id/btnGestionUsuarios"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="👥 Gestionar Usuarios (Solo Admin)"
+        android:backgroundTint="#D35400"
+        android:textColor="#FFFFFF"
+        android:layout_marginBottom="12dp"/>
+
+    <!-- Botón para Cerrar Sesión (Visible para cualquier rol) -->
+    <Button
+        android:id="@+id/btnCerrarSesion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="🚪 Cerrar Sesión"
+        android:backgroundTint="#C0392B"
+        android:textColor="#FFFFFF"
+        android:layout_marginBottom="12dp"/>
+
+    <!-- Lista de Trámites / Productos -->
+    <ListView
+        android:id="@+id/listViewTrámites"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:dividerHeight="8dp"/>
+
+</LinearLayout>

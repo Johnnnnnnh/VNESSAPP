@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp"
+    android:gravity="center"
+    android:background="#F5F6FA">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Selecciona el Servicio de Vness"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:textColor="#2C3E50"
+        android:layout_marginBottom="30dp"
+        android:gravity="center"/>
+
+    <!-- Opción 1: Función principal (Registro Civil / Trámites) -->
+    <Button
+        android:id="@+id/btnServicioRegistroCivil"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="🏛️ Información de Registro Civil (Trámites)"
+        android:backgroundTint="#2980B9"
+        android:textColor="#FFFFFF"
+        android:padding="14dp"
+        android:layout_marginBottom="16dp"/>
+
+    <!-- Opción 2: Soporte Personal Trainer (Premium) -->
+    <Button
+        android:id="@+id/btnServicioPersonalTrainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="💪 Soporte Personal Trainer &amp; Guías (Premium)"
+        android:backgroundTint="#8E44AD"
+        android:textColor="#FFFFFF"
+        android:padding="14dp"
+        android:layout_marginBottom="16dp"/>
+
+    <!-- Opción 3: Opción Doméstica / Conversación simple (Premium) -->
+    <Button
+        android:id="@+id/btnServicioDomestico"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="🤖 Asistente Doméstico / Conversación (Premium)"
+        android:backgroundTint="#16A085"
+        android:textColor="#FFFFFF"
+        android:padding="14dp"
+        android:layout_marginBottom="30dp"/>
+
+    <!-- Botón para cerrar sesión desde el menú de servicios -->
+    <Button
+        android:id="@+id/btnCerrarSesionServicios"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="🚪 Cerrar Sesión"
+        android:backgroundTint="#C0392B"
+        android:textColor="#FFFFFF"/>
+
+</LinearLayout>

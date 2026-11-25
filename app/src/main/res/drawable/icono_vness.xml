@@ -1,0 +1,46 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="200dp"
+    android:height="160dp"
+    android:viewportWidth="200"
+    android:viewportHeight="160">
+
+    <!-- Antena superior de la asistente -->
+    <path
+        android:fillColor="#C15CD7"
+        android:pathData="M100,20 L100,35"/>
+    <path
+        android:fillColor="#AA72D5"
+        android:pathData="M93,15 A7,7 0 1,1 107,15 A7,7 0 1,1 93,15"/>
+
+    <!-- Cabeza / Casco exterior del Robot -->
+    <path
+        android:fillColor="#95A1AF"
+        android:pathData="M60,40 L140,40 A35,35 0 0,1 175,75 L175,100 A35,35 0 0,1 140,135 L60,135 A35,35 0 0,1 25,100 L25,75 A35,35 0 0,1 60,40 Z"/>
+
+    <!-- Pantalla / Visor frontal de la asistente -->
+    <path
+        android:fillColor="#553173"
+        android:pathData="M38,55 L162,55 A20,20 0 0,1 182,75 L182,105 A20,20 0 0,1 162,125 L38,125 A20,20 0 0,1 18,105 L18,75 A20,20 0 0,1 38,55 Z"/>
+
+    <!-- Ojos / Display LED brillante de la asistente (Color Morado / Vness) -->
+    <path
+        android:fillColor="#56C7CC"
+        android:pathData="M50,75 L85,75 L85,95 L50,95 Z"/>
+    <path
+        android:fillColor="#56C7CC"
+        android:pathData="M115,75 L150,75 L150,95 L115,95 Z"/>
+
+    <!-- Detalles estéticos / Brillos en los ojos -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M55,80 L65,80 L65,85 L55,85 Z"/>
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M120,80 L130,80 L130,85 L120,85 Z"/>
+
+    <!-- Sonrisa / Indicador de voz central -->
+    <path
+        android:fillColor="#E74C3C"
+        android:pathData="M85,110 L115,110 L112,114 L88,114 Z"/>
+
+</vector>

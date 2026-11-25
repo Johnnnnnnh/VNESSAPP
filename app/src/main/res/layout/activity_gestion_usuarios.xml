@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="#F5F6FA">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Panel de Control de Usuarios"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="#2C3E50"
+        android:layout_marginBottom="16dp"/>
+
+    <!-- ID: etNewUser -->
+    <EditText
+        android:id="@+id/etNewUser"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nuevo Nombre de Usuario"
+        android:inputType="text"
+        android:layout_marginBottom="8dp"/>
+
+    <!-- ID: etNewPass -->
+    <EditText
+        android:id="@+id/etNewPass"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Contraseña"
+        android:inputType="textPassword"
+        android:layout_marginBottom="8dp"/>
+
+    <!-- ID: etNewRol -->
+    <EditText
+        android:id="@+id/etNewRol"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Rol (ADMIN, SUPERVISOR, USUARIO)"
+        android:inputType="text"
+        android:layout_marginBottom="12dp"/>
+
+    <!-- ID: btnCrearUsuario -->
+    <Button
+        android:id="@+id/btnCrearUsuario"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Crear Usuario"
+        android:backgroundTint="#27AE60"
+        android:layout_marginBottom="20dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Usuarios Registrados:"
+        android:textSize="12sp"
+        android:textColor="#7F8C8D"
+        android:layout_marginBottom="8dp"/>
+
+    <!-- ID: listViewUsuarios -->
+    <ListView
+        android:id="@+id/listViewUsuarios"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:dividerHeight="6dp"/>
+
+</LinearLayout>
